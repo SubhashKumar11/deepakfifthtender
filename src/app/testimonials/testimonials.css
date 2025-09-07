@@ -1,0 +1,28 @@
+.cro img {
+    height: 280px;
+}
+
+.driver-hiring {
+    background-color: #654321;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+}
+
+@media screen and (max-width:858px) {
+    * {
+        margin-top: 8px;
+    }
+
+    .cro img {
+        height: 150px;
+    }
+
+    .driver-hiring {
+        background-color: #654321;
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+        height: 60px;
+    }
+}

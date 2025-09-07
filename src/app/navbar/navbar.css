@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+nav {
+    background-color: rgb(255, 196, 12);
+    height: 70px;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li a {
+    color: rgb(214, 52, 52);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: black;
+    background: #fffcfc;
+    width: fit-content;
+}
+
+nav ul li {
+    line-height: 60px;
+}
+
+label.logo {
+    color: antiquewhite;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 100px;
+}
+
+.logo img {
+    margin-top: 0;
+    height: auto;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.checkButton {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.myCheckBox {
+    display: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: fill;
+}
+
+@media screen and (max-width:952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    label.logo img {
+        height: 38px;
+        width: 80px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    nav ul li a:hover {
+        color: black;
+        background: #fffcfc;
+        width: fit-content;
+    }
+
+    .carousel-item img {
+        height: 200px;
+        object-fit: fill;
+    }
+}
+
+@media screen and (max-width:858px) {
+    .site-nav {
+        /* position: relative; top: 100%; right: 0%; background: #f10962; clip-path: circle(0px at top right); transition: clip-path ease-in-out 700ms; display: none; z-index: 1; */
+        position: relative;
+        z-index: 3;
+    }
+
+    .checkButton {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100vh;
+        width: 100%;
+        background-color: pink;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: black;
+        width: 20px;
+        height: 30px;
+        border-radius: 20%;
+    }
+
+    .site-nav ul li a:hover {
+        color: black;
+        background: #ce5454;
+        width: fit-content;
+        border-radius: 25px;
+    }
+
+    .myCheckBox:checked~ul {
+        left: 0;
+    }
+
+    .carousel-item img {
+        height: 22rem;
+        object-fit: fill;
+    }
+}

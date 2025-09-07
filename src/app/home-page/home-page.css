@@ -1,0 +1,56 @@
+/* *{ margin: 0; padding: 0; } nav{ background-color: rgb(249, 216, 2); height: 60px; width: 100%; } nav ul li{ display: inline-block; } nav ul{ float: right; } nav ul li a { color: rgb(214, 52, 52); text-decoration: none; font-size: 20px; font-family: sans-serif; padding: 7px 13px; border-radius: 3px; transition: 0.2s; font-weight: bold; } nav ul li a:hover{ color: black; background: #fffcfc; width: fit-content; } nav ul li { line-height: 60px; } label.logo{ color: antiquewhite; font-size: 35px; line-height: 60px; padding: 0 100px; } .logo img{ margin-top: 0; height: 80px; width: 150px; } .checkButton{ font-size: 30px; color: white; float: right; line-height: 80px; margin-right: 40px; cursor: pointer; display: none; } .myCheckBox{ display: none; } a:hover{ color: yellow; } .carousel-item img{ height: 400px; object-fit: fill; } @media screen and (max-width:952px){ label.logo{ font-size: 30px; padding-left: 10px; } label.logo img{ height: 38px; width: 80px; } nav ul li a { font-size: 16px; } nav ul li a:hover{ color: black; background: #fffcfc; width: fit-content; } .carousel-item img{ height: 200px; object-fit: fill; } } @media screen and (max-width:858px){ .checkButton{ display: block; } ul{ position: fixed; width: 100vh; width: 100%; background-color: pink; top: 80px; left: -100%; text-align: center; transition: all 0.5s; } nav ul li{ display: block; margin: 10px; line-height: 30px; } nav ul li a{ font-size: 20px; color: black; width: 20px; height: 30px; border-radius: 20%; } nav ul li a:hover{ color: black; background: #fffcfc; width: fit-content; cursor: pointer; } .myCheckBox:checked ~ ul{ left: 0; } } */
+/* code for new crousel */
+.carousel-item img {
+    height: 22rem;
+    object-fit: fill;
+}
+#texts{
+    color: rgb(252, 83, 5);
+    font-weight: 800;
+}
+h3,p{
+    color: rgb(235, 5, 158);
+    font-weight: 800;
+}
+.b1 {
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.chose-car {
+    text-align: center;
+}
+
+.htag {
+    color: red;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.chose-car button {
+    margin-right: 25px;
+}
+
+.car-image img {
+    background-color: white;
+    width: 100%;
+    margin-top: 5px;
+    height: 290px;
+}
+
+@media screen and (max-width:858px) {
+    .carousel-item img {
+        height: 8rem;
+    }
+
+    .carousel-inner {
+        background-color: none;
+    }
+
+    button {
+        background-color: none;
+        color: rgb(12, 12, 12);
+        margin-top: 1px;
+    }
+}

@@ -1,0 +1,115 @@
+<!-- alert message on submit -->
+<!-- @if(!showAlert) { <div class="alert alert-success" role="alert"> Form submitted successfully! </div> } -->
+<div class="row">
+  <div class="column">
+    <div class="card crd">
+      <div class="responsive-form">
+        <h1>Book your Tender Consultancy</h1>
+        <h3>Fill details to book Tender!</h3>
+        <form
+          action="javascript:void(0)"
+          class="form-container"
+          (ngSubmit)="placeCustomerToDbAdminMail()"
+        >
+          <label for="Name" class="form-container-label">Company Name*: </label>
+          <input
+            type="text"
+            [(ngModel)]="customerFormData.name"
+            id="riderName"
+            name="riderName"
+            placeholder="Your company name..."
+            class="form-container-input"
+            required
+          />
+          <label for="date" class="form-container-label"> Date*: </label>
+          <input
+            type="date"
+            [(ngModel)]="customerFormData.date"
+            id="date"
+            name="date"
+            placeholder="Timing of your ride"
+            class="form-container-input"
+            required
+          />
+          <label for="time" class="form-container-label"> Time*: </label>
+          <input
+            type="time"
+            [(ngModel)]="customerFormData.time"
+            id="time"
+            name="time"
+            placeholder="select current time"
+            class="form-container-input"
+            required
+          />
+          <label for="companylocation" class="form-container-label">Company Location*: </label>
+          <input
+            type="text"
+            [(ngModel)]="customerFormData.companylocation"
+            id="pickuplocation"
+            name="pickuplocation"
+            placeholder="your company location"
+            class="form-container-input"
+            required
+          />
+          <label for="tenderfillinglocation" class="form-container-label">Tender filling Location*: </label>
+          <input
+            type="text"
+            [(ngModel)]="customerFormData.tenderfillinglocation"
+            id="droplocation"
+            name="droplocation"
+            placeholder="Your tender filling state location"
+            class="form-container-input"
+            required
+          />
+          <label for="phonenumber" class="form-container-label"> Phone Number*: </label>
+          <input
+            type="text"
+            [(ngModel)]="customerFormData.phonenumber"
+            id="phonenumber"
+            name="phonenumber"
+            placeholder="Your Phone Number"
+            class="form-container-input"
+            required
+          />
+          <label for="email" class="form-container-label"> Email*: </label>
+          <input
+            type="email"
+            [(ngModel)]="customerFormData.email"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+            class="form-container-input"
+            required
+          />
+          <button type="submit" class="form-container-button">Apply now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- card 2 item -->
+  <div class="column">
+    <div class="card cards">
+      <div class="inquiry">
+        <i class="fa-solid fa-phone"></i>
+        <h4>Call us for Inquiry</h4>
+      </div>
+      <div class="detail">
+        <p>we value our clients deeply and</p>
+        <p id="sec">we want you to be happy</p>
+      </div>
+      <div class="phone-number">
+        <h3>773-916-9296</h3>
+      </div>
+      <div class="contact-us">
+        <button
+          routerLink="/contact"
+          style="border-radius: 25px"
+          type="button"
+          class="btn btn-warning"
+        >
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

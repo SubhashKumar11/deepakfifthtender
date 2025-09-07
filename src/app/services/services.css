@@ -1,0 +1,20 @@
+.cons {
+    margin-left: 150px;
+    margin-right: 200px;
+}
+
+.card {
+    box-shadow: 3px 3px rgb(235, 237, 205);
+}
+
+@media screen and (max-width:858px) {
+    .cons {
+        margin-left: -10px;
+        margin-right: 0px;
+    }
+
+    #imgs {
+        width: 100%;
+        background-color: red;
+    }
+}
